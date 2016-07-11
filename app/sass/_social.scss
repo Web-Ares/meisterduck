@@ -15,14 +15,14 @@
       height: 20px;
       padding: 1px 0 0;
       border-radius: 50%;
-      background: #70b1dd;
+      background: $main-color-1;
       text-align: center;
       vertical-align: middle;
       @include transition(background, .3, 0);
       
       i {
         vertical-align: middle;
-        color: #254860;
+        color: $social-color;
         font-size: 14px;
         @include transition(color, .3, 0);
       }
@@ -30,7 +30,7 @@
         background: transparent;
 
         i {
-          color: #70b1dd;
+          color: $main-color-1;
         }
       }
     }
@@ -41,7 +41,7 @@
 @media (min-width: $tablet-landscape) {
 
   .social {
-    top: 22px;
+    top: 19px;
     right: 14px;
 
     li {

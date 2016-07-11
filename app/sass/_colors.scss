@@ -1,3 +1,8 @@
+$main-color-1: #70b1dd;
+$main-color-2: #ff981b;
+$main-color-3: #fff;
+
+
 /*---------- popup ----------*/
 $popup-back: rgba( 0, 0, 0, .5 );
 $popup-close-back: rgba( 255, 255, 255, 1 );
@@ -32,3 +37,18 @@ $btn-2-back-hover: #f0a;
 $btn-2-back-active: #000;
 $btn-2-color-active: #f0a;
 /*---------- /btn ---------*/
+
+/*---------- site ----------*/
+$site-search-color: $main-color-3;
+$site-search-border: $main-color-1;
+$site-focus-search-border: $main-color-2;
+$site-menu-back: $main-color-1;
+$site-menu-color: $main-color-3;
+$site-menu-hover-color: $main-color-2;
+$site-menu-btn-back: $main-color-2;
+$site-menu-active-btn-back: $main-color-3;
+/*---------- /site ---------*/
+
+/*---------- social ----------*/
+$social-color: #254860;
+/*---------- /social ---------*/
