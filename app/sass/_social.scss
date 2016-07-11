@@ -1,0 +1,66 @@
+.social {
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+
+  li {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 6px;
+
+    a {
+      display: table;
+      width: 20px;
+      height: 20px;
+      padding: 1px 0 0;
+      border-radius: 50%;
+      background: #70b1dd;
+      text-align: center;
+      vertical-align: middle;
+      @include transition(background, .3, 0);
+      
+      i {
+        vertical-align: middle;
+        color: #254860;
+        font-size: 14px;
+        @include transition(color, .3, 0);
+      }
+      &:hover {
+        background: transparent;
+
+        i {
+          color: #70b1dd;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: $tablet-landscape) {
+
+  .social {
+    top: 22px;
+    right: 14px;
+
+    li {
+      margin-left: 6px;
+
+      a {
+        width: 23px;
+        height: 23px;
+        padding: 2px 0 0;
+        border-radius: 50%;
+
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+}
