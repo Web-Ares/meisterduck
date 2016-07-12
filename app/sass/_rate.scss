@@ -1,0 +1,15 @@
+.rate {
+  position: relative;
+  height: 15px;
+  width: 85px;
+
+  > * {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background: url("../img/rate.png") repeat-x;
+    background-size: 17px 15px;
+  }
+
+}

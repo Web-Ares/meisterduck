@@ -1,0 +1,67 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-left: 20px;;
+  font-size: 13px;
+  color: #639cc3;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 0.3s ease;
+  transition: border-bottom 0.3s ease;
+
+  &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../img/link.png") no-repeat;
+    background-size: 61px 13px;
+      content:'';
+  }
+
+  &_upload:before {
+    top: -2px;
+    left: -20px;
+    width: 14px;
+    height: 13px;
+    background-position: -32px 0;
+  }
+
+  &_date:before {
+    top: -2px;
+    left: -19px;
+    width: 14px;
+    height: 13px;
+    background-position: -48px 0;
+  }
+
+  &_comments:before {
+    top: 0;
+    left: -19px;
+    width: 13px;
+    height: 13px;
+    background: url("../img/link-comments.png") no-repeat;
+    background-size: contain;
+  }
+
+  &_reply:before {
+    top: -1px;
+    left: -19px;
+    width: 14px;
+    height: 13px;
+    background-position: -16px 0;
+  }
+
+  &_share:before {
+    top: -1px;
+    left: -19px;
+    width: 14px;
+    height: 13px;
+    background-position: 0 0;
+  }
+
+}
+a.link {
+  &:hover {
+    border-bottom: 1px solid #639cc3;
+  }
+}

@@ -1,0 +1,18 @@
+.contact-us {
+  width: 100%;
+  max-width: 659px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .contact-us {
+    max-width: none;
+    margin: 0;
+
+    .site__title {
+      margin-bottom: 40px;
+    }
+  }
+
+}
