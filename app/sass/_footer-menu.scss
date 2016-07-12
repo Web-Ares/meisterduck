@@ -1,0 +1,50 @@
+.footer-menu {
+
+  &__item {
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      color: #fff;
+      font-size: 13px;
+      -webkit-transition: color 0.3s ease;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ff981b;
+      }
+
+    }
+
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .footer-menu {
+    position: absolute;
+    top: 67px;
+    left: 180px;
+    padding-left: 9px;
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 0 0 16px;
+    }
+
+    &:before {
+      position: absolute;
+      top: -24px;
+      left: 0;
+      width: 1px;
+      height: 67px;
+      background: #3d6078;
+      content: '';
+    }
+
+  }
+
+}
