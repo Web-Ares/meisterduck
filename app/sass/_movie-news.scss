@@ -1,5 +1,5 @@
 .movie-news {
-  color: #313131;
+  color: $main-color-4;
   width: 100%;
   max-width: 724px;
   margin: 0 auto 30px;
@@ -10,7 +10,7 @@
 
   &__item {
     padding: 26px 0;
-    border-bottom: 1px solid #f3f3f3;
+    border-bottom: 1px solid $movie-news-border;
 
     &:first-child {
       padding-top: 0;
@@ -31,8 +31,6 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  &__inner {}
 
   &__controls {
     margin-bottom: 7px;
@@ -86,10 +84,6 @@
       margin: -6px 0 5px;
     }
 
-    &__controls {}
-
-    &__txt {}
-
   }
 
 }
@@ -98,37 +92,6 @@
 
   .movie-news {
     margin-bottom: 46px;
-
-    &__item {}
-
-    &__inner {}
-
-    &__pic {}
-
-    &__controls {}
-
-    &__txt {}
-
-    &__title {}
-
-  }
-
-}
-
-@media (min-width: $desktop) {
-
-  .movie-news {
-
-    &__item {}
-
-    &__inner {}
-
-    &__pic {}
-
-    &__controls {}
-
-    &__txt {}
-
   }
 
 }

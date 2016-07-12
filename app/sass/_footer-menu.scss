@@ -7,13 +7,13 @@
 
     a {
       display: inline-block;
-      color: #fff;
+      color: $main-color-3;
       font-size: 13px;
       -webkit-transition: color 0.3s ease;
       transition: color 0.3s ease;
 
       &:hover {
-        color: #ff981b;
+        color: $main-color-2;
       }
 
     }
@@ -25,8 +25,8 @@
 
   .footer-menu {
     position: absolute;
-    top: 67px;
-    left: 180px;
+    top: 68px;
+    left: 189px;
     padding-left: 9px;
 
     &__item {
@@ -41,7 +41,7 @@
       left: 0;
       width: 1px;
       height: 67px;
-      background: #3d6078;
+      background: $footer-menu-bg;
       content: '';
     }
 

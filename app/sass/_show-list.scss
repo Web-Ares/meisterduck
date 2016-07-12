@@ -10,7 +10,7 @@
     right: -400px;
     bottom: 0;
     left: -400px;
-    background: #f3f3f3;
+    background: $show-list-bg;
     content:'';
   }
 
@@ -20,21 +20,10 @@
 
   .show-list {
 
-
     &>*:nth-child(even):before {
       right: -9999px;
       left: -9999px;
     }
-
-  }
-
-}
-
-@media (min-width: $desktop) {
-
-  .show-list {
-
-    &>*:nth-child(even):before {}
 
   }
 

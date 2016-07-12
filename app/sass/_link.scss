@@ -4,7 +4,7 @@
   position: relative;
   margin-left: 20px;;
   font-size: 13px;
-  color: #639cc3;
+  color: $link-color;
   border-bottom: 1px solid transparent;
   -webkit-transition: border-bottom 0.3s ease;
   transition: border-bottom 0.3s ease;
@@ -62,6 +62,6 @@
 }
 a.link {
   &:hover {
-    border-bottom: 1px solid #639cc3;
+    border-bottom: 1px solid $link-color;
   }
 }

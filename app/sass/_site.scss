@@ -1,9 +1,10 @@
 input::-moz-placeholder {
-  color: #fff; }
+  color: $main-color-3; }
 input:-ms-input-placeholder {
-  color: #fff; }
+  color: $main-color-3;
+}
 input::-webkit-input-placeholder {
-  color: #fff; }
+  color: $main-color-3; }
 
 .site {
   overflow: hidden;
@@ -190,7 +191,7 @@ input::-webkit-input-placeholder {
     right: 0;
     bottom: 0;
     background: url(../img/pattern.jpg);
-    border-bottom:20px solid #2f556f;
+    border-bottom:20px solid $site-footer;
 
     &-layout {
       position: relative;
@@ -249,14 +250,14 @@ input::-webkit-input-placeholder {
     padding: 5px 113px 5px 10px;
     margin-bottom: 21px;
     font-weight: 300;
-    color: #fff;
+    color: $main-color-3;
     font-size: 15px;
-    background: #254860;
+    background: $site-title-bg;
     border-radius: 0 20px 20px 0;
 
     mark {
       font-weight: 700;
-      color: #70b1dd;
+      color: $site-title-mark;
     }
 
     .btn {
@@ -289,7 +290,7 @@ input::-webkit-input-placeholder {
       margin-bottom: 7px;
       font-size: 14px;
       @include main-font1();
-      color: #b6b6b6;
+      color: $site-form-label;
     }
     textarea,
     input {
@@ -297,15 +298,15 @@ input::-webkit-input-placeholder {
       display: block;
       padding: 0 23px;
       height: 30px;
-      border: 1px solid #d2d2d2;
-      background: #fff;
+      border: 1px solid $site-form-border;
+      background: $main-color-3;
       @include main-font1();
-      color: #000;
+      color: $site-input-color;
       font-size: 14px;
     }
     textarea:focus,
     input:focus {
-      box-shadow: 0 0 5px rgba(0,0,0,0.15);
+      box-shadow: 0 0 5px $site-input-focus;
     }
     textarea {
       padding: 10px 23px;
@@ -344,7 +345,7 @@ input::-webkit-input-placeholder {
         position: relative;
         font-size: 16px;
         text-transform: uppercase;
-        color: #fff;
+        color: $main-color-3;
         @include main-font1();
         font-weight: 700;
         border: none;
@@ -356,74 +357,9 @@ input::-webkit-input-placeholder {
 
 }
 
-@media (min-width: $phone-landscape) {
-
-}
 @media (min-width: $tablet-portrait) {
 
   .site {
-
-    &__header {
-
-      &:after {}
-
-      &-layout {}
-    }
-    &__header-search {
-
-      input {
-
-        &:focus {}
-      }
-      button {
-
-        i {}
-        &:hover {}
-      }
-    }
-    &__menu {
-
-      &.opened {}
-
-      &-item {
-
-        a {
-
-          &.active {}
-        }
-      }
-    }
-    &__menu-btn {
-
-      span {
-
-        &:before,
-        &:after {}
-        &:before {}
-        &:after {}
-      }
-      &.opened {
-
-        span {
-
-          &:before {}
-
-          &:after {}
-        }
-      }
-    }
-    &__footer {
-
-      &-layout {}
-      &-logo {
-
-        img {}
-      }
-
-      .social {}
-    }
-    &__centered {}
-    &__content {}
     &__title {
       font-size: 30px;
       padding: 5px 113px 6px 24px;
@@ -491,7 +427,7 @@ input::-webkit-input-placeholder {
       }
     }
     &__footer {
-      border-bottom: 48px solid #2f556f;
+      border-bottom: 48px solid $site-footer-border;
 
       &-layout {
         position: relative;
@@ -502,14 +438,14 @@ input::-webkit-input-placeholder {
             left: 960px;
             width: 100vw;
             height: 199px;
-            background: #fff;
+            background: $site-footer-before;
             content:'';
         }
 
         &:after {
           position: absolute;
           top: -90px;
-          right: -83px;
+          right: -92px;
           width: 283px;
           height: 289px;
           background: url("../img/footer-pic.png") no-repeat;
@@ -521,15 +457,15 @@ input::-webkit-input-placeholder {
       }
       &-logo {
         position: absolute;
-        top: 42px;
-        left: 0;
+        top: 43px;
+        left: 9px;
         margin: 0;
       }
 
       .social {
         position: absolute;
-        top: 62px;
-        right: 140px;
+        top: 63px;
+        right: 131px;
       }
     }
     &:after {
@@ -634,8 +570,5 @@ input::-webkit-input-placeholder {
       }
     }
 
-    &__footer {
-
-    }
   }
 }

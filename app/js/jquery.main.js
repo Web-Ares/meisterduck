@@ -27,8 +27,6 @@
                 _showBtn.on( {
                     click: function() {
 
-                        console.log('click');
-
                         _openMenu( $( this ) );
 
                     }

@@ -2,7 +2,7 @@
   max-width: 1030px;
   padding: 30px 15px ;
   margin: 0 auto;
-  color: #313131;
+  color: $main-color-4;
   font-size: 14px;
 
   .site__title {
@@ -52,11 +52,11 @@
     margin-bottom: 15px;
     font-size: 100%;
     width: auto;
-    border: 1px solid #000;
+    border: 1px solid $content-border;
   }
   th,
   td {
-    border: 1px solid #000;
+    border: 1px solid $content-border;
     padding: 4px;
     text-align: left;
   }
@@ -66,9 +66,9 @@
   }
   a,
   a font {
-    color: #313131;
+    color: $main-color-4;
     text-decoration: none;
-    border-bottom: 1px solid #313131;
+    border-bottom: 1px solid $main-color-4;
     @include transition( border-bottom, 0.3, 0 )
   }
   a:hover,
@@ -76,9 +76,9 @@
     border-bottom: 1px solid transparent;
   }
   img {
-    border: 1px solid #fff;
+    border: 1px solid $main-color-3;
     border-radius: 3px;
-    box-shadow: 0 0 1px rgba(0,0,0,0.7);
+    box-shadow: 0 0 1px $content-img-shadow;
   }
   img.alignleft {
     margin: 2px 40px 25px 3px;
@@ -104,8 +104,8 @@
   hr {
     height: 1px;
     border: none;
-    color: #aaa;
-    background: #aaa;
+    color: $main-color-4;
+    background: $main-color-4;
     margin: 10px 0;
     clear: both;
   }

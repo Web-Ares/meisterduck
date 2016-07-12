@@ -4,8 +4,6 @@
   max-width: 304px;
   margin: 0 auto;
 
-  &__wrap {}
-
   &__item {
     display: block;
     position: relative;
@@ -30,7 +28,7 @@
     font-size: 12px;
     line-height: 1.4;
     font-weight: 700;
-    color: #313131;
+    color: $main-color-4;
 
     &_rate {
       display: -webkit-box;
@@ -56,34 +54,16 @@
 
 }
 
-@media (min-width: $phone-landscape) {
-
-  .catalog {
-
-    &__wrap {}
-
-    &__item {}
-
-    &__pic {}
-
-    &__txt {}
-
-  }
-
-}
-
 @media (min-width: $tablet-portrait) {
 
   .catalog {
     max-width: 662px;
     margin: 0 auto;
 
-    &__wrap {}
-
     &__item {
 
       &:hover .catalog__txt-inner {
-        color: #ff981b;
+        color: $main-color-2;
       }
 
     }
@@ -98,10 +78,6 @@
     &__cover:nth-child(odd) {
       margin-left: 0;
     }
-
-    &__cover:nth-child(even):before {}
-
-    &__pic {}
 
     &__txt {
       display: inline-block;
@@ -130,15 +106,6 @@
   .catalog {
     max-width: none;
     padding: 45px 0 20px;
-
-    &__wrap {}
-
-    &__item {}
-
-    &__pic {}
-
-    &__txt {}
-
   }
 
 }

@@ -1,14 +1,14 @@
 .articles-preview {
-  border: 1px solid #ff8c38;
-  background: #fff;
+  border: 1px solid $articles-preview-border;
+  background: $main-color-3;
   width: 100%;
   max-width: 295px;
   margin: 0 auto 20px;
   padding-bottom: 8px;
 
   &__title {
-    background: #ff7b1b;
-    color: #fff;
+    background: $articles-preview-title-bg;
+    color: $main-color-3;
     padding: 5px 5px 5px;
     font-size: 16px;
     font-weight: 300;
@@ -68,7 +68,7 @@
   &__more {
     display: inline-block;
     position: relative;
-    color: #70b1dd;
+    color: $main-color-1;
     font-size: 12px;
     font-weight: 700;
     padding-right: 7px;
@@ -79,8 +79,8 @@
       right: 0;
       width: 3px;
       height: 3px;
-      border-bottom: 1px solid #70b1dd;
-      border-right: 1px solid #70b1dd;
+      border-bottom: 1px solid $main-color-1;
+      border-right: 1px solid $main-color-1;
       -ms-transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
@@ -89,15 +89,15 @@
 
     &_2 {
       font-size: 12px;
-      color: #fff;
+      color: $main-color-3;
       padding: 6px 16px 6px;
-      background: #70b1dd;
+      background: $main-color-1;
       border-radius: 20px;
 
       &:before {
         top: 11px;
         right: 10px;
-        border-color: #fff;
+        border-color: $main-color-3;
       }
     }
   }
@@ -115,14 +115,6 @@
       font-size: 22px;
       margin-bottom: 19px;
     }
-
-    &__item {}
-
-    &__pic {}
-
-    &__inner {}
-
-    &__txt {}
 
     &__more {
 
